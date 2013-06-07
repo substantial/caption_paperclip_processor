@@ -18,7 +18,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+class ImageWithCaption  < ActiveRecord::Base
+  has_attached_file :image, styles: {
+    geometry: "350x250",
+    processors: [:caption],
+    caption: "Some caption text",
+    position: 'center',
+    interword_spacing: 10,
+    kerning: 2.5,
+    padding_height: 12,
+    padding_width: 26,
+    font: Rails.root.join('app', 'assets', 'fonts', 'someFont.ttf'),
+    font_color: "rgba\\(255,255,255,0.8\\)",
+    caption_background: "gray"
+  }
+end
+```
+
+The geometry will be the size of the caption that will fill the caption. Font
+size will be whatever is 'best fit' into the caption 'box'
 
 ## Contributing
 
