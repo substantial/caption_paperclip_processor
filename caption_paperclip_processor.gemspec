@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["shaun@substantial.com"]
   spec.description   = %q{Add captions to images}
   spec.summary       = %q{Add captions to images}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/substantial/caption_paperclip_processor"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
