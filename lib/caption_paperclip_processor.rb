@@ -1,7 +1,7 @@
 require "paperclip"
 
 module Paperclip
-  class CaptionProcessor < Processor
+  class Caption < Processor
 
     def initialize file, options = {}, attachment = nil
       super
